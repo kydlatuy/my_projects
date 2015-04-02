@@ -1,0 +1,15 @@
+[Thu Apr 02 15:03:09.389089 2015] [authz_core:error] [pid 5924:tid 1736] [client 127.0.0.1:61135] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/
+[Thu Apr 02 15:03:09.824627 2015] [authz_core:error] [pid 5924:tid 1736] [client 127.0.0.1:61135] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/favicon.ico
+[Thu Apr 02 15:03:09.834635 2015] [authz_core:error] [pid 5924:tid 1736] [client 127.0.0.1:61135] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/favicon.ico
+[Thu Apr 02 15:04:18.721683 2015] [authz_core:error] [pid 3220:tid 1736] [client 127.0.0.1:61138] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/
+[Thu Apr 02 15:04:18.960091 2015] [authz_core:error] [pid 3220:tid 1736] [client 127.0.0.1:61138] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/favicon.ico
+[Thu Apr 02 15:04:18.972100 2015] [authz_core:error] [pid 3220:tid 1736] [client 127.0.0.1:61138] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/favicon.ico
+[Thu Apr 02 15:06:00.579963 2015] [authz_core:error] [pid 3220:tid 1736] [client 127.0.0.1:61143] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/www
+[Thu Apr 02 15:06:15.033680 2015] [authz_core:error] [pid 3220:tid 1736] [client 127.0.0.1:61148] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/
+[Thu Apr 02 15:07:56.458870 2015] [authz_core:error] [pid 7888:tid 1736] [client 127.0.0.1:61162] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/
+[Thu Apr 02 15:09:42.670172 2015] [authz_core:error] [pid 5640:tid 1724] [client 127.0.0.1:61220] AH01630: client denied by server configuration: C:/my_projects/blog.local/www/
+[Thu Apr 02 15:18:29.365456 2015] [authz_core:error] [pid 1160:tid 1732] [client 127.0.0.1:61296] AH01630: client denied by server configuration: C:/my_projects/blog.loc/www/
+[Thu Apr 02 15:18:29.692691 2015] [authz_core:error] [pid 1160:tid 1732] [client 127.0.0.1:61296] AH01630: client denied by server configuration: C:/my_projects/blog.loc/www/favicon.ico
+[Thu Apr 02 15:18:29.721708 2015] [authz_core:error] [pid 1160:tid 1732] [client 127.0.0.1:61296] AH01630: client denied by server configuration: C:/my_projects/blog.loc/www/favicon.ico
+[Thu Apr 02 15:19:05.680412 2015] [authz_core:error] [pid 1160:tid 1732] [client 127.0.0.1:61301] AH01630: client denied by server configuration: C:/my_projects/blog.loc/www/first.php
+[Thu Apr 02 16:18:02.974547 2015] [:error] [pid 5420:tid 1736] [client 127.0.0.1:63507] script 'C:/my_projects/blog.loc/www/first.php' not found or unable to stat
