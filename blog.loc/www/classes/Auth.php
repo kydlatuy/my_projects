@@ -59,9 +59,6 @@ class Auth {
             $this->error[] = "wrong password";
             return false;
         }
-        
-        
-        
     }
     
     /**
@@ -70,12 +67,12 @@ class Auth {
      * @return boolean
      */
     public function register($data){
-        
-        $stmt = $this->db->prepare("INSERT INTO user (email, password, phone, name) VALUES (:email, :password, :phone, :name)");
-        $stmt->bindParam(':name', $data['name']);
-        $stmt->bindParam(':password', md5($data['password']));
-        $stmt->bindParam(':phone', $data['phone']);
+        $stmt = $this->db->prepare("INSERT INTO user (email, first_name, last_name, password) VALUES (:email, :first_name, :last_name, :password)");
         $stmt->bindParam(':email', $data['email']);
+        $stmt->bindParam(':first_name', $data['firstName']);
+        $stmt->bindParam(':last_name', $data['lastName']);
+        $stmt->bindParam(':password', md5($data['password']));
+        //$stmt->bindParam(':time_created', $data['time_created']);
 
         try {
             $stmt->execute();
@@ -84,9 +81,54 @@ class Auth {
             echo $ex->getMessage();
             return false;
         }
-        
     }
-    
+
+    /**
+     * delete
+     *
+     */
+    public function delete(){
+        $sql = $this->db->prepare("DELETE from `user` where `id`=:id");
+        $id = $_SESSION['userid'];
+        $sql->bindParam(':id', $id);
+        try{
+            $sql->execute();
+            return true;
+        } catch (\PDOException $ex) {
+            echo $ex->getMessage();
+            return false;
+        }
+    }
+
+
+
+    /**
+     * update
+     */
+    public function update($data){
+        //$sql = $this->db->prepare("UPDATE `user` SET `email`=:email,`last_name`=:last_name, `first_name`=:first_name, `password`=:password, `time_updated`=:last_updated  where `id`=:id");
+        $sql = $this->db->prepare("UPDATE `user` SET `email`=:email,`last_name`=:last_name, `first_name`=:first_name, `password`=:password  where `id`=:id");
+        $sql->bindParam(':email', $data['email']);
+        $sql->bindParam(':first_name', $data['firstName']);
+        $sql->bindParam(':last_name', $data['lastName']);
+        $sql->bindParam(':password', md5($data['password']));
+        //$sql->bindParam(':last_updated', $data['updated_date']);
+        $id = $_SESSION['userid'];
+        $sql->bindParam(':id', $id);
+
+        try {
+            $sql->execute();
+            return true;
+        }
+        catch (\PDOException $ex) {
+            echo $ex->getMessage();
+            return false;
+        }
+    }
+
+
+
+
     /**
      *  print errors
      */

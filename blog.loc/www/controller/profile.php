@@ -5,7 +5,7 @@ namespace controller;
 /**
  * profile controller
  */
-class profile {
+class Profile {
     
     /**
      * 

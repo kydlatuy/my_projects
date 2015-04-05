@@ -5,15 +5,7 @@ namespace controller\auth;
 /**
  * logout controller
  */
-class logout {
-    
-    /**
-     * 
-     */
-    public function __construct() {
-        ;
-    }
-    
+class Logout {
     /**
      * index method
      */
@@ -21,7 +13,6 @@ class logout {
         
         session_destroy();
         header("Location: /");
-        
+
     }
-    
 }

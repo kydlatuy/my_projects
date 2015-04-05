@@ -13,37 +13,38 @@ class DataBase {
      */
     private static $dbh;
 
-
     /**
      *
      * @var array database option 
      */
     private static $config = array(
         'host' => 'localhost',
-        'pass' => 'fylhsq1',
-        'db' => 'testing',
+        'db' => 'users',
         'user' => 'root'
     );
-    
 
-    
     /**
      * pdo connect yo database
      * @return PDOConnect
      */
+
+     /**
+     * pdo connect yo database
+     * @return PDOConnect
+     */
+
     public static function getConnect(){
-        
+
         if (!self::$dbh){
             $config = self::$config;
             try {
-                self::$dbh = new \PDO("mysql:host=localhost;dbname=users", "root");
+                self::$dbh = new \PDO("mysql:host={$config['host']};dbname={$config['db']}", $config['user']);
             } catch (\PDOException $ex) {
                 echo $ex->getMessage();
             }
-            
         }
-        
+        //var_dump("good");
         return self::$dbh;
-        
     }
+
 }

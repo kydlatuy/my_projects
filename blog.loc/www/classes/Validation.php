@@ -76,7 +76,6 @@ class Validation {
                 }
                 
             }
-            
             if (count($this->error) > 0){
                 return FALSE;
             } else {

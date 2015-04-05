@@ -4,7 +4,7 @@ namespace controller\auth;
 /**
  * login controlled
  */
-class login {
+class Login {
     
     /**
      * 

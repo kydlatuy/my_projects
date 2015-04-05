@@ -1,7 +1,7 @@
 <form method="post">
     
-    Email - <input type="text" name="email"/> <br/>
-    Password - <input type="password" name="password"/> <br/>
+    <input type="text" name="email" placeholder="Email" required/> <br/>
+    <input type="password" name="password" placeholder="Password" required/> <br/>
     <input type="submit" value="login"/>
     
 </form>

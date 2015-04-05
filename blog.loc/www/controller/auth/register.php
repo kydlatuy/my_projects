@@ -5,14 +5,7 @@ namespace controller\auth;
 /**
  * register controller
  */
-class register {
-
-    /**
-     * 
-     */
-    public function __construct() {
-        ;
-    }
+class Register {
 
     /**
      * index method
@@ -29,7 +22,9 @@ class register {
             if ($validation->run()) {
                 $auth = new \classes\Auth();
                 if ($auth->register($validation->getData())) {
-                    echo 'Register success';
+
+                    //echo 'Register success';
+                    \core\Template::create()->render('profile');
                 }
             } else {
                 $validation->printErrors();
