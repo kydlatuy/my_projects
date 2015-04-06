@@ -10,8 +10,8 @@ class Register {
     /**
      * index method
      */
-    public function index() {
-        if ($_POST) {
+    public function index(){
+        if ($_POST){
             $validation = new \classes\Validation($_POST);
             $validation->setRule('email', 'email');
             $validation->setRule('email', 'required');
@@ -21,10 +21,10 @@ class Register {
             $validation->setRule('password_confirm', 'equal_password');
             if ($validation->run()) {
                 $auth = new \classes\Auth();
-                if ($auth->register($validation->getData())) {
-
-                    //echo 'Register success';
-                    \core\Template::create()->render('profile');
+                $params = $validation->getData();
+                $params['time_created'] = date('Y-m-d H:i:s');
+                if ($auth->register($params)){
+                    echo 'Register success';
                 }
             } else {
                 $validation->printErrors();

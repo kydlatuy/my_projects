@@ -19,18 +19,8 @@ class Route {
         } else {
             $controller = "\controller" . str_replace('/', '\\', $request);
         }
-
-
-        
         $object = new $controller;
-        //var_dump($object);
-        //print_r($object);
-        
         $object->index();
-        
     }
-   
-
-    
 }
 

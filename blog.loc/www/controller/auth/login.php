@@ -36,7 +36,6 @@ class Login {
             }
         }
         \core\Template::create()->render('auth/login');
-        
     }
     
 }

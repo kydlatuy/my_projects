@@ -5,7 +5,7 @@ namespace classes;
 /**
  * class validation
  */
-class Validation {
+class Validation{
     
     /**
      *
@@ -36,7 +36,7 @@ class Validation {
      * 
      * @param array $data
      */
-    public function __construct($data) {
+    public function __construct($data){
         
         $this->db = \core\DataBase::getConnect();
         $this->data = $data;
@@ -92,7 +92,7 @@ class Validation {
      */
     private function email($key,$field){
         
-        if (!filter_var($field, FILTER_VALIDATE_EMAIL)) {
+        if (!filter_var($field, FILTER_VALIDATE_EMAIL)){
             $this->error[] = "$key is not valid";
         }
     }

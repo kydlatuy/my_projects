@@ -21,10 +21,9 @@ class Auth {
     /**
      * 
      */
+
     public function __construct() {
-        
         $this->db = \core\DataBase::getConnect();
-        
     }
     
     /**
@@ -34,24 +33,19 @@ class Auth {
      * @return boolean
      */
     public function login($email, $pass){
-
         $sth = $this->db->prepare(
                         'SELECT *
                              FROM user
                                 WHERE email = :email');
         $sth->execute(array(':email' => $email));
         $result = $sth->fetchAll();
-
         if (count($result) == 0){
             $this->error[] = "user not found";
             return false;
         }
         $user = $result[0];
-        
         if ($user)
-            
         $passwordDb = $user['password'];
-        
         if (md5($pass) == $passwordDb){
             $this->setUserData($user);
             return true;
@@ -66,14 +60,14 @@ class Auth {
      * @param array $data
      * @return boolean
      */
-    public function register($data){
-        $stmt = $this->db->prepare("INSERT INTO user (email, first_name, last_name, password) VALUES (:email, :first_name, :last_name, :password)");
-        $stmt->bindParam(':email', $data['email']);
-        $stmt->bindParam(':first_name', $data['firstName']);
-        $stmt->bindParam(':last_name', $data['lastName']);
-        $stmt->bindParam(':password', md5($data['password']));
-        //$stmt->bindParam(':time_created', $data['time_created']);
 
+    public function register($params){
+        $stmt = $this->db->prepare("INSERT INTO user (email, first_name, last_name, password, time_created) VALUES (:email, :first_name, :last_name, :password, :time_created)");
+        $stmt->bindParam(':email', $params['email']);
+        $stmt->bindParam(':first_name', $params['firstName']);
+        $stmt->bindParam(':last_name', $params['lastName']);
+        $stmt->bindParam(':password', md5($params['password']));
+        $stmt->bindParam(':time_created', $params['time_created']);
         try {
             $stmt->execute();
             return true;
@@ -100,13 +94,10 @@ class Auth {
         }
     }
 
-
-
     /**
      * update
      */
     public function update($data){
-        //$sql = $this->db->prepare("UPDATE `user` SET `email`=:email,`last_name`=:last_name, `first_name`=:first_name, `password`=:password, `time_updated`=:last_updated  where `id`=:id");
         $sql = $this->db->prepare("UPDATE `user` SET `email`=:email,`last_name`=:last_name, `first_name`=:first_name, `password`=:password  where `id`=:id");
         $sql->bindParam(':email', $data['email']);
         $sql->bindParam(':first_name', $data['firstName']);
@@ -115,7 +106,6 @@ class Auth {
         //$sql->bindParam(':last_updated', $data['updated_date']);
         $id = $_SESSION['userid'];
         $sql->bindParam(':id', $id);
-
         try {
             $sql->execute();
             return true;
@@ -126,20 +116,15 @@ class Auth {
         }
     }
 
-
-
-
     /**
      *  print errors
      */
     public function printErrors(){
-        
         if (count($this->error) > 0){
             foreach ($this->error as $err){
                 echo $err . '<br/>';
             }
         }
-        
     }
     
     /**
@@ -147,10 +132,8 @@ class Auth {
      * @param array $data
      */
     private function setUserData($data){
-        
         $_SESSION['islogin'] = 1;
         $_SESSION['userid'] = $data['id'];
         
     }
-    
 }
