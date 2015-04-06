@@ -18,7 +18,7 @@ class Update {
      */
 
     public function index(){
-        if ($_POST) {
+        if ($_POST){
             $validation = new \classes\Validation($_POST);
             $validation->setRule('email', 'email');
             $validation->setRule('email', 'required');
@@ -31,8 +31,9 @@ class Update {
                 $params = $validation->getData();
                 $params['updated_date'] = date('Y-m-d H:i:s');
                 if ($auth->update($params)){
-
-                    echo 'Register success';
+                    if ($auth->login($validation->get('email'),$validation->get('password'))){
+                        header("Location: /profile");
+                    }
                 }
             } else {
                 $validation->printErrors();
@@ -40,6 +41,4 @@ class Update {
         }
         \core\Template::create()->render('auth/update');
     }
-
-
 } 

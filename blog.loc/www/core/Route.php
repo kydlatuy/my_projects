@@ -6,12 +6,11 @@ namespace core;
  */
 class Route {
     
-    
     /**
      * method for routing url
      */
-    public static function run() {
-        
+
+    public static function run(){
         $request = $_SERVER['REQUEST_URI'];
         //print_r($request);
         if ($request == '/'){

@@ -5,18 +5,20 @@ namespace core;
 /**
  * class for database connect
  */
-class DataBase {
+class DataBase{
      
     /**
      *
      * @var PDOObject 
      */
+
     private static $dbh;
 
     /**
      *
      * @var array database option 
      */
+
     private static $config = array(
         'host' => 'localhost',
         'db' => 'users',
@@ -34,7 +36,6 @@ class DataBase {
      */
 
     public static function getConnect(){
-
         if (!self::$dbh){
             $config = self::$config;
             try {
@@ -43,8 +44,6 @@ class DataBase {
                 echo $ex->getMessage();
             }
         }
-        //var_dump("good");
         return self::$dbh;
     }
-
 }

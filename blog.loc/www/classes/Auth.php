@@ -10,12 +10,14 @@ class Auth {
      *
      * @var PDOObject 
      */
+
     private $db;
     
     /**
      *
      * @var array errors 
      */
+
     private $error;
     
     /**
@@ -32,6 +34,7 @@ class Auth {
      * @param string $pass - password
      * @return boolean
      */
+
     public function login($email, $pass){
         $sth = $this->db->prepare(
                         'SELECT *
@@ -81,6 +84,7 @@ class Auth {
      * delete
      *
      */
+
     public function delete(){
         $sql = $this->db->prepare("DELETE from `user` where `id`=:id");
         $id = $_SESSION['userid'];
@@ -97,6 +101,7 @@ class Auth {
     /**
      * update
      */
+
     public function update($data){
         $sql = $this->db->prepare("UPDATE `user` SET `email`=:email,`last_name`=:last_name, `first_name`=:first_name, `password`=:password  where `id`=:id");
         $sql->bindParam(':email', $data['email']);
@@ -119,6 +124,7 @@ class Auth {
     /**
      *  print errors
      */
+
     public function printErrors(){
         if (count($this->error) > 0){
             foreach ($this->error as $err){
@@ -131,9 +137,9 @@ class Auth {
      * set user data
      * @param array $data
      */
+
     private function setUserData($data){
         $_SESSION['islogin'] = 1;
         $_SESSION['userid'] = $data['id'];
-        
     }
 }

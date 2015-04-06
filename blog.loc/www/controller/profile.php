@@ -10,20 +10,20 @@ class Profile {
     /**
      * 
      */
+
     public function __construct() {
         $this->db = \core\DataBase::getConnect();
     }
-    
+
     /**
      * index method
      */
+
     public function index(){
-        
         if (!$_SESSION['islogin']){
             header("Location: /auth/login");
             exit;
         }
-        
         $sth = $this->db->prepare(
                         'SELECT *
                              FROM user
@@ -35,5 +35,4 @@ class Profile {
         \core\Template::create()->render('profile');
         
     }
-    
 }

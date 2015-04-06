@@ -17,7 +17,6 @@ class Login {
      * index method
      */
     public function index(){
-        
         if ($_POST){
             $validation = new \classes\Validation($_POST);
             $validation->setRule('email','email');
@@ -30,12 +29,10 @@ class Login {
                 } else {
                     $auth->printErrors();
                 }
-                        
             } else {
                 $validation->printErrors();
             }
         }
         \core\Template::create()->render('auth/login');
     }
-    
 }

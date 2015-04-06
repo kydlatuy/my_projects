@@ -10,6 +10,7 @@ class Main {
     /**
      * index method
      */
+
     public function index(){
         \core\Template::create()->render('start_page');
     }

@@ -24,7 +24,9 @@ class Register {
                 $params = $validation->getData();
                 $params['time_created'] = date('Y-m-d H:i:s');
                 if ($auth->register($params)){
-                    echo 'Register success';
+                    if ($auth->login($validation->get('email'),$validation->get('password'))){
+                        header("Location: /profile");
+                    }
                 }
             } else {
                 $validation->printErrors();
@@ -32,5 +34,4 @@ class Register {
         }
         \core\Template::create()->render('auth/register');
     }
-
 }
