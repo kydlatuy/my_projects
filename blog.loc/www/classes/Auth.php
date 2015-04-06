@@ -102,13 +102,13 @@ class Auth {
      * update
      */
 
-    public function update($data){
-        $sql = $this->db->prepare("UPDATE `user` SET `email`=:email,`last_name`=:last_name, `first_name`=:first_name, `password`=:password  where `id`=:id");
-        $sql->bindParam(':email', $data['email']);
-        $sql->bindParam(':first_name', $data['firstName']);
-        $sql->bindParam(':last_name', $data['lastName']);
-        $sql->bindParam(':password', md5($data['password']));
-        //$sql->bindParam(':last_updated', $data['updated_date']);
+    public function update($params){
+        $sql = $this->db->prepare("UPDATE `user` SET `email`=:email,`last_name`=:last_name, `first_name`=:first_name, `password`=:password, `time_updated`=:time_updated where `id`=:id");
+        $sql->bindParam(':email', $params['email']);
+        $sql->bindParam(':first_name', $params['firstName']);
+        $sql->bindParam(':last_name', $params['lastName']);
+        $sql->bindParam(':password', md5($params['password']));
+        $sql->bindParam(':time_updated', $params['time_updated']);
         $id = $_SESSION['userid'];
         $sql->bindParam(':id', $id);
         try {

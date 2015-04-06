@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="14f0ba2f-e31c-4c73-bb82-75dd45ac04f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/classes/Auth.php" afterPath="$PROJECT_DIR$/blog.loc/www/classes/Auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/core/DataBase.php" afterPath="$PROJECT_DIR$/blog.loc/www/core/DataBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/controller/Main.php" afterPath="$PROJECT_DIR$/blog.loc/www/controller/Main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/core/Route.php" afterPath="$PROJECT_DIR$/blog.loc/www/core/Route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/core/Template.php" afterPath="$PROJECT_DIR$/blog.loc/www/core/Template.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/controller/auth/Update.php" afterPath="$PROJECT_DIR$/blog.loc/www/controller/auth/Update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/classes/Validation.php" afterPath="$PROJECT_DIR$/blog.loc/www/classes/Validation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/logs/access.log" afterPath="$PROJECT_DIR$/blog.loc/logs/access.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/index.php" afterPath="$PROJECT_DIR$/blog.loc/www/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.loc/www/view/main.php" afterPath="$PROJECT_DIR$/blog.loc/www/view/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="my_projects.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,6 +49,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Auth.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog.loc/www/classes/Auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="104" column="36" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.11931818" vertical-offset="1705" max-vertical-offset="2550">
+              <folding>
+                <marker date="1428310399988" expanded="true" signature="561:661" placeholder="SELECT * FRO..user..." />
+                <marker date="1428310399988" expanded="true" signature="1328:1466" placeholder="INSERT INTO ..." />
+                <marker date="1428310399988" expanded="true" signature="2070:2103" placeholder="DELETE from ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog.loc/www/view/profile.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,15 +80,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog.loc/www/view/auth/update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog.loc/www/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog.loc/www/view/auth/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.21915285" vertical-offset="0" max-vertical-offset="543">
+            <state line="7" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
               <folding />
             </state>
           </provider>
@@ -146,15 +145,15 @@
         <option value="$PROJECT_DIR$/blog.loc/www/controller/Profile.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/classes/Validation.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/controller/auth/Register.php" />
-        <option value="$PROJECT_DIR$/blog.loc/www/controller/auth/Update.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/controller/auth/Login.php" />
-        <option value="$PROJECT_DIR$/blog.loc/www/classes/Auth.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/controller/Main.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/core/DataBase.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/core/Route.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/core/Template.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/index.php" />
         <option value="$PROJECT_DIR$/blog.loc/www/view/main.php" />
+        <option value="$PROJECT_DIR$/blog.loc/www/controller/auth/Update.php" />
+        <option value="$PROJECT_DIR$/blog.loc/www/classes/Auth.php" />
       </list>
     </option>
   </component>
@@ -406,7 +405,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -473,9 +472,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="107" column="32" selection-start="2434" selection-end="2434" vertical-scroll-proportion="0.0" vertical-offset="1544" max-vertical-offset="2737">
           <folding>
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user..." />
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
+            <marker date="1428310399988" expanded="true" signature="561:661" placeholder="SELECT * FRO..user..." />
+            <marker date="1428310399988" expanded="true" signature="1328:1466" placeholder="INSERT INTO ..." />
+            <marker date="1428310399988" expanded="true" signature="2070:2103" placeholder="DELETE from ..." />
           </folding>
         </state>
       </provider>
@@ -612,9 +611,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="29" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2465">
           <folding>
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user..." />
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
+            <marker date="1428310399988" expanded="true" signature="561:661" placeholder="SELECT * FRO..user..." />
+            <marker date="1428310399988" expanded="true" signature="1328:1466" placeholder="INSERT INTO ..." />
+            <marker date="1428310399988" expanded="true" signature="2070:2103" placeholder="DELETE from ..." />
           </folding>
         </state>
       </provider>
@@ -655,29 +654,11 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog.loc/www/controller/auth/Update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-17.307692" vertical-offset="179" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog.loc/www/classes/Validation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="40" selection-start="1845" selection-end="1845" vertical-scroll-proportion="36.615383" vertical-offset="2499" max-vertical-offset="3060">
           <folding>
             <marker date="1428307336334" expanded="true" signature="2966:3067" placeholder="SELECT id FR..user..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.loc/www/classes/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="1" selection-start="3566" selection-end="3566" vertical-scroll-proportion="-16.461538" vertical-offset="2020" max-vertical-offset="2550">
-          <folding>
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..user..." />
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1428307932552" expanded="true" signature="-1:-1" placeholder="DELETE from ..." />
           </folding>
         </state>
       </provider>
@@ -699,13 +680,6 @@
     <entry file="file://$PROJECT_DIR$/blog.loc/www/controller/auth/Logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="30" selection-start="201" selection-end="201" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.loc/www/controller/auth/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="9" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-17.307692" vertical-offset="111" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
@@ -791,8 +765,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog.loc/www/view/auth/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.21915285" vertical-offset="0" max-vertical-offset="543">
+        <state line="7" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.loc/www/controller/auth/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="9" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.83179295" vertical-offset="111" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.loc/www/controller/auth/Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="37" selection-start="843" selection-end="843" vertical-scroll-proportion="0.51756006" vertical-offset="162" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.loc/www/classes/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="36" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.11931818" vertical-offset="1705" max-vertical-offset="2550">
+          <folding>
+            <marker date="1428310399988" expanded="true" signature="561:661" placeholder="SELECT * FRO..user..." />
+            <marker date="1428310399988" expanded="true" signature="1328:1466" placeholder="INSERT INTO ..." />
+            <marker date="1428310399988" expanded="true" signature="2070:2103" placeholder="DELETE from ..." />
+          </folding>
         </state>
       </provider>
     </entry>

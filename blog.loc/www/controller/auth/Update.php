@@ -29,7 +29,7 @@ class Update {
             if ($validation->run()){
                 $auth = new \classes\Auth();
                 $params = $validation->getData();
-                $params['updated_date'] = date('Y-m-d H:i:s');
+                $params['time_updated'] = date('Y-m-d H:i:s');
                 if ($auth->update($params)){
                     if ($auth->login($validation->get('email'),$validation->get('password'))){
                         header("Location: /profile");

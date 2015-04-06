@@ -5,7 +5,7 @@ namespace core;
  * class routing
  */
 class Route {
-    
+
     /**
      * method for routing url
      */
