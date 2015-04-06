@@ -485,3 +485,5 @@
 127.0.0.1 - - [06/Apr/2015:11:54:04 +0300] "GET /auth/Update HTTP/1.1" 200 499 "http://www.blog.loc/profile" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0"
 127.0.0.1 - - [06/Apr/2015:11:54:49 +0300] "POST /auth/Update HTTP/1.1" 302 499 "http://www.blog.loc/auth/Update" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0"
 127.0.0.1 - - [06/Apr/2015:11:54:49 +0300] "GET /profile HTTP/1.1" 200 199 "http://www.blog.loc/auth/Update" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0"
+127.0.0.1 - - [06/Apr/2015:12:25:00 +0300] "GET /auth/Delete HTTP/1.1" 302 - "http://www.blog.loc/profile" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0"
+127.0.0.1 - - [06/Apr/2015:12:25:00 +0300] "GET / HTTP/1.1" 200 70 "http://www.blog.loc/profile" "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:37.0) Gecko/20100101 Firefox/37.0"
